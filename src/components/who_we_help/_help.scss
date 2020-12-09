@@ -1,0 +1,99 @@
+.section_help{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 50px auto;
+  text-align: center;
+  @extend %main_text_style;
+}
+
+.section_help_header{
+  padding-bottom: 20px;
+  font-size: 38px;
+}
+
+.section_help_list{
+  text-align: center;
+
+  .section_help_button{
+    margin: 50px 80px;
+    border: none;
+    letter-spacing: 0;
+    font: normal normal normal 24px $font-base;
+
+    &:hover{
+      border: 0.75px solid $color-text;
+      padding: 20px 30px;
+    }
+  }
+}
+
+.section_help_paragraf{
+  width: 45%;
+  margin: 0 auto;
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 880px){
+  .section_help_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section_help_paragraf{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1080px){
+  .section_help_button{
+    margin: 10px auto;
+    padding: 0;
+  }
+}
+
+//section list
+
+.section_charity_list{
+  width: 80%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_charity_list_position{
+  padding: 10px;
+}
+
+.section_charity_list_name{
+  font-size: 22px;
+}
+
+.section_charity_list_things{
+  padding: 10px;
+}
+
+.section_charity_list_line{
+  height: 2px;
+  background: $color-background;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.section_charity_list_number{
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.section_charity_list_number_page{
+  padding: 10px;
+
+  &:hover{
+    border: 0.75px solid $color-text;
+  }
+}

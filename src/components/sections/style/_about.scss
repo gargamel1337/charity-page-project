@@ -1,0 +1,64 @@
+.section_aboutUs{
+  max-width: 100%;
+  height: auto;
+}
+
+.section_aboutUs_all{
+  background-color: $color-background;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 920px){
+  .section_aboutUs_all{
+    display: flex;
+    height: 660px;
+  }
+}
+
+.section_aboutUs_text{
+  text-align: center;
+  padding: 20px;
+  @extend %main_text_style;
+
+  .section_aboutUs_text_header{
+    padding-bottom: 20px;
+    font-size: 38px;
+  }
+
+  .section_aboutUs_text_body{
+    text-align: end;
+  }
+
+  .section_aboutUs_text_paragraf{
+    text-align: justify;
+    padding-top: 30px;
+  }
+
+  .section_aboutUs_signature_image{
+    padding: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 920px){
+  .section_aboutUs_text{
+    width: 50%;
+    padding: 90px 70px;
+  }
+}
+
+.aboutUs_image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 920px){
+  .section_aboutUs_image{
+    width: 50%;
+  }
+
+  .aboutUs_image{
+    height: 660px;
+  }
+}
