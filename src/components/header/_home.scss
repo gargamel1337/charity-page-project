@@ -26,6 +26,10 @@
   .section_header_register_li{
     padding: 10px 20px 10px 10px;
 
+    a{
+      text-decoration: none;
+    }
+
     &:hover{
       border: 0.75px solid $color-yellow;
     }
@@ -39,6 +43,10 @@
 
   .section_header_main_menu_li{
     padding: 15px 20px;
+
+    a{
+      text-decoration: none;
+    }
 
     &:hover{
       border: 0.75px solid $color-text;

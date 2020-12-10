@@ -1,0 +1,43 @@
+.section_login,
+.section_registration{
+  text-align: center;
+  padding: 40px;
+  @extend %main_text_style;
+}
+
+.section_login_text,
+.section_registration_text{
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+.section_login_form,
+.section_registration_form,{
+  font-size: 20px;
+  margin: 30px auto;
+  padding: 40px 50px 35px 50px;
+  text-align: left;
+  width: 30%;
+  background: $color-background;
+}
+
+.section_login_form_row,
+.section_registration_form_row{
+  padding: 10px 0;
+  input {
+    border: none;
+    border-bottom: 2px solid $color-text;
+    width: 100%;
+    background: none;
+  }
+}
+
+.section_login_button,
+.section_registration_button{
+  margin: 10px 100px;
+  border: none;
+
+  &:hover{
+    border:0.75px solid $color-text;;
+  }
+}
