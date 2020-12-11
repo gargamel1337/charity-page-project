@@ -8,15 +8,17 @@ import HelpMain from "./components/who_we_help/Help_main";
 import Login from "./components/header/login/Login";
 import Registration from "./components/header/login/Registration";
 import Home from "./components/header/Home";
+import Header from "./components/header/Header";
 
 function App() {
     return (
         <HashRouter>
             <div className="App">
-                <header><Home/></header>
+                <header><Header/></header>
                 <Switch>
                     <Route exact path="/">
                         <>
+                            <Home/>
                             <Section_TreeColumns/>
                             <Section_FourColumns/>
                             <AboutUs/>
